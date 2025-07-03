@@ -35,7 +35,7 @@ I am currently working as a freelancer. My goal is to learn new technologies and
 ## Languages:
 
 - **Russian**: Native speaker
-- **English**: A1 (In progress)
+- **English**: A1 (In progress...)
 
 ## Code Examples:
 ```javascript
