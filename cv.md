@@ -30,6 +30,7 @@ I am currently working as a freelancer. My goal is to learn new technologies and
 
 - **HTML/CSS** (Completed)
 - **JavaScript** (In progress...)
+- **PHP** (In progress...)
 
 ## Languages:
 
