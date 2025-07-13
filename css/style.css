@@ -1,9 +1,252 @@
-.main {
-padding-top: 40px;
-padding-bottom: 40px;
 
+/* css/style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.main__container {
+body {
+  height: 100%;
+  min-width: 320px;
+  font-family: 'Onest', 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 500;
+  font-display: swap;
+  background-color: #f8f9fa;
+  color: #13465B;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header__container,
+.about__container,
+.footer__container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Header styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 11px 9px rgba(29, 233, 39, 0.28);
+  -moz-box-shadow: 0px 0px 11px 9px rgba(29, 233, 39, 0.28);
+  box-shadow: 0px 0px 11px 9px rgba(29, 233, 39, 0.28);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navigation__list-link {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  transition: background-color 0.3s;
+}
+
+.navigation__list-link:hover {
+  background-color: #dee2e6;
+}
+
+/* Main content styles */
+.page {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex: 1;
+}
+
+.about {
+  padding: 40px 0;
+}
+
+.about__name {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.about__section {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.about__title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+  font-weight: 600;
+}
+
+.about__list {
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+.about__list-item {
+  margin-bottom: 8px;
+  padding-left: 10px;
+}
+
+.about__list-link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.about__list-link:hover {
+  text-decoration: underline;
+}
+
+.about__text {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.about__code {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #e9ecef;
+  padding: 20px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  transition: background-color 0.3s;
+}
+
+.footer__link:hover {
+  background-color: #dee2e6;
+}
+
+.footer__copyright {
+  font-weight: 500;
+}
+
+.footer__logo-link {
+  display: inline-block;
+  width: 100px;
+}
+
+.footer__logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .navigation__list {
+    justify-content: center;
+  }
+  
+  .about__name {
+    font-size: 2rem;
+  }
+  
+  .footer__content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .about__section {
+    padding: 15px;
+  }
+  
+  .about__name {
+    font-size: 1.8rem;
+  }
 }
